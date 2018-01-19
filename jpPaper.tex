@@ -1,0 +1,126 @@
+%% 11/23/2015
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
+%
+% This file includes commands and instructions
+% given in the order necessary to produce a final output that will
+% satisfy AGU requirements.
+%
+% You may copy this file and give it your
+% article name, and enter your text.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PLEASE DO NOT USE YOUR OWN MACROS
+% DO NOT USE \newcommand, \renewcommand, or \def, etc.
+%
+% FOR FIGURES, DO NOT USE \psfrag or \subfigure.
+% DO NOT USE \psfrag or \subfigure commands.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Step 1: Set the \documentclass
+%
+% There are two options for article format:
+%
+% 1) PLEASE USE THE DRAFT OPTION TO SUBMIT YOUR PAPERS.
+% The draft option produces double spaced output.
+%
+% 2) numberline will give you line numbers.
+
+%% To submit your paper:
+\documentclass[draft,linenumbers]{agujournal}
+%\draftfalse
+
+%% For final version.
+% \documentclass{agujournal}
+
+% Now, type in the journal name: \journalname{<Journal Name>}
+
+% ie, \journalname{Journal of Geophysical Research}
+%% Choose from this list of Journals:
+%
+% JGR-Atmospheres
+% JGR-Biogeosciences
+% JGR-Earth Surface
+% JGR-Oceans
+% JGR-Planets
+% JGR-Solid Earth
+% JGR-Space Physics
+% Global Biochemical Cycles
+% Geophysical Research Letters
+% Paleoceanography
+% Radio Science
+% Reviews of Geophysics
+% Tectonics
+% Space Weather
+% Water Resource Research
+% Geochemistry, Geophysics, Geosystems
+% Journal of Advances in Modeling Earth Systems (JAMES)
+% Earth's Future
+% Earth and Space Science
+%
+%
+
+\journalname{JGR-Oceans}
+
+
+\begin{document}
+
+\title{Trends in Physical Properties at the Southern New England Shelfbreak}
+
+%  AUTHORS AND AFFILIATIONS
+\authors{B. E. Harden \affil{1}\thanks{Sea Education Association, Woods Hole Road, MA 02540}, G. G. Gawarkiewicz \affil{2}, M. Infante \affil{2}}
+\affiliation{1}{Sea Education Association}
+\affiliation{2}{Woods Hole Oceanographic Institution}
+
+
+%% Corresponding Author:
+\correspondingauthor{B. E. Harden}{bharden@sea.edu}
+
+%% Keypoints, final entry on title page.
+\begin{keypoints}
+\item 11 years of repeat section across the Southern New England shelfbreak
+\item Significant increase in temperatures on the shelf and slope of of 0.2$^{circ}C\,yr^{-1}$
+\item Confirms trend in properties seen further south
+\end{keypoints}
+
+
+\begin{abstract}
+= enter abstract here =
+\end{abstract}
+
+
+\section{Introduction}
+
+
+\section{Methods}
+
+Data for this study comes from the WHOI-MIT Joint Program orientation cruises aboard the Sailing School Vessel Corwith Cramer. These cruises are typically 10-days in length and occurred every year from 2003 to 2013 in late June (table?) to the south of Cape Cod.
+
+The majority of sampling on these cruises occurred along standard sections forming a “U” shape off the New England shelf-break, along the slope, and back onto the shelf (see figure). The unique nature of sampling under sail produced some variability in precise sampling locations depending on the year. The two offshore transects are separated by XXkm and typically consisted of 5-7 casts each with a typical resolution of approximately XX km (see tanle for full information). For the purposes of this paper we will refer to the two sections in any one year as “west” and “east”. The along slope section will before referred to as the slope section.
+
+For this study we use CTD data from these sections to look at the mean structure and trends across the shelf-break. We processed all data on to a vertical resolution of 1 dbar and removed data spikes. In
+
+In addition, we produced standard gridded sections across the shelf-break. Each section was objectively mapped on to a standard section and gridded using a laplacian spline interpolator (e.g. Sutherland? Nikolopoulos et al., 2009)  with vertical and horizontal resolutions of 5m and 5km respectively.
+
+
+\begin{table}[!ht]
+\caption{Cruise details}
+\centering
+\begin{tabular}{c c c c c c c l}
+\hline
+\input{./tables/cruiseOverview.tex}
+\hline
+% \multicolumn{2}{l}{$^{a}$Footnote text here.}
+\end{tabular}
+\end{table}
+
+
+
+
+\acknowledgments
+ = enter acknowledgments here =
+
+\bibliography{./bib_master}
+
+\end{document}
+
