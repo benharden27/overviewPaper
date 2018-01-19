@@ -2,7 +2,7 @@ clear
 
 % set up source directory locations
 dataFold = '../data/';
-saveFold = '../plots/';
+saveFold = '../figures/';
 
 % extract all mat files in directory
 files = dirr([dataFold 'jpmat/*.mat']);
@@ -65,7 +65,7 @@ for i = 1:2
     yscale = sw_dist([1 2],lonran([1 1]));
     
     % start subplot
-    h(i) = subplot(1,2,isodd(i)+1), hold on
+    h(i) = subplot(1,2,isodd(i)+1); hold on
     contourf(lon,lat,z,[-1.5 -1.5],'k')
     colormap([1 1 1;0 0 0])
     contour(lon,lat,z,cont,'color',[.5 .5 .5])
@@ -132,12 +132,8 @@ for i = 1:2
                  
     end
     
-    pause(0.1)
-    % change the labels to deg W and N
-    h(i).XTickLabel
-    get(h(i),'yticklabel')
     
-% Complete axis bounds
+    % Complete axis bounds
     axis([lonran latran])
     set(gca,'plotboxaspectratio',[ratio 1 1],'box','on')
 end
